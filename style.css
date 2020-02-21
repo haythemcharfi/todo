@@ -1,0 +1,75 @@
+.tot {
+    background-color: #4696E5;
+    height: 300px;
+    flex-direction: column;
+}
+
+#p1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-size: 43px;
+    margin-left: 954px;
+    padding-top: 34px;
+    color: white;
+}
+
+#p2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1081px;
+    color: white;
+}
+
+#searchbar {
+    height: 50px;
+    width: 1057px;
+    margin-left: 123px
+}
+
+#but {
+    margin-left: 1113px;
+    margin-top: 12px;
+    width: 73px;
+    height: 47px;
+    border-color: #4696E5;
+}
+
+.tot2 {
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 27px;
+    color: gray;
+    background-color: #FBFBFB;
+    height: 100PX;
+}
+
+#items {
+    list-style-type: none;
+}
+
+.checked {
+    text-decoration: line-through;
+    background: gray;
+    color: #fff;
+}
+
+.nochecked {
+    text-decoration: none;
+    background: gray;
+    color: #fff;
+}
+
+
+/*ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}

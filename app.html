@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tot">
+        <p id="p1">TO-DO app!</p>
+        <p id="p2">add new To-do</p>
+        <input type="text" name="name" placeholder="Enter new task" id="searchbar"></br>
+        <button onclick="add1()" id="but">ADD</button>
+    </div>
+    <div class="tot2">
+        let's get some work done
+    </div>
+    <div>
+        <ul id="items">
+
+        </ul>
+    </div>
+    <script>
+        function add1() {
+            let boutton1 = document.createElement('button')
+            let boutton2 = document.createElement('button')
+            const ul = document.getElementById('items')
+            let li = document.createElement('li')
+            let inputValue = document.getElementById('searchbar').value
+            let text = document.createTextNode(inputValue)
+            li.appendChild(boutton1)
+            li.appendChild(boutton2)
+            li.className = "nochecked";
+            li.appendChild(text)
+            ul.appendChild(li)
+            boutton1.textContent = 'complete';
+            boutton2.textContent = 'Delete';
+            boutton1.className = "close";
+
+
+
+
+
+
+
+
+            boutton1.addEventListener('click', (e) => {
+                e.preventDefault()
+                change()
+
+
+
+            })
+            boutton2.addEventListener('click', (e) => {
+                e.preventDefault()
+                deletee()
+
+
+
+            })
+
+
+            function change() {
+                boutton1.textContent = 'undo'
+                li.style.textDecoration = 'line-through'
+            }
+
+            function deletee() {
+                li.remove()
+            }
+
+
+
+
+            /* li.classList.add('checked')
+             var list = document.querySelector('ul');
+             list.addEventListener('click', function(ev) {
+                 if (ev.target.tagName === 'li') {
+                     ev.target.classList.toggle('checked');
+                 }
+             }, false);*/
+
+        }
+    </script>
+</body>
+
+</html>
